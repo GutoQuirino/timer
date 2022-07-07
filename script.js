@@ -32,10 +32,12 @@ function msec(){
 function start(){
     let intervalo = setInterval(msec,100);
     fun = intervalo;
+    document.getElementById('inicio').disabled = true;
 }
 
 function pause(){
     clearInterval(fun);
+    document.getElementById('inicio').disabled = false;
 }
 
 function stop(){
