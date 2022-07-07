@@ -45,8 +45,10 @@ function stop(){
     seg = '00'
     min = '00'
     hr = '00';
+    clearInterval(fun);
     mili.innerHTML = ms;
     segundos.innerHTML = seg;
     minutos.innerHTML = min;
     hora.innerHTML = hr;
+    document.getElementById('inicio').disabled = false;
 }
